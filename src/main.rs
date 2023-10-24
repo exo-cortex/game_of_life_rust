@@ -1,3 +1,5 @@
+use std::time::Duration;
+
 use rand::{rngs::SmallRng, Rng, SeedableRng};
 use std::thread;
 
@@ -34,7 +36,7 @@ fn main() {
         }
         playground = playground_buffer;
         print_playground(&playground, true);
-        thread::sleep(Duration::from_millis(50));
+        thread::sleep(Duration::from_millis(100));
     }
 }
 
