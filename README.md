@@ -1,7 +1,26 @@
 # An implementation of "Conway's Game of Life" written in Rust.
 
+▄  ▀▀                ▄▀▀▄         ▄▀▄ ▄  █ ▄▄      ▄           ▀
+ ▀              █▄▄   ▄ █▄         ▀ ▀  ▀ ▀▄▄▀   ▄█▀▀▄          
+         ▀▀█    ▄▄ ▄   ▀                       ▄█   ▀▀          
+          ▀    ▀  ▀ ██                        ▀██           ▄▄▄ 
+                   ▀▀         █                 ▀▄▄ ▀█▄ ▄▄███▄▄▀
+             ▄▄▀█▄▀                               ▀█▀  ▄▀▀      
+ █▄          ▀▀ ▄▄▄           █▄█                  ▄ ▄▄▄▄       
+ ▄█▀ ▄▀▄     ▄▀█ █ ██                            ▀▀▄▀▀  ▀       
+▄▀  ▄▀  █▄   ▀█▀█▀▀▀                                  ▄▄   ▄    
+     ▀  ▄      ▀▀        ▄                           ▀▄ ▀▄ ▀▄█  
+   ▄▀▀█▀                ▀▄    ▄                   █   ▀▀██ ▀▀▀  
+   █  ▀              ▄▄▄    ▄█      ▀█                          
+▄█▀ ▄▀                   ▄▄▄   ▀   ▀ ██▄                        
+▀▀ ▀▀                    ▀▀ ▄ █     ▀▄▄▄               ▄▄▀██▀▄█▀
+  ▄ ▀▄     ▄             █▀ ▄ ▄   ▄██▀██                ▀▀▀▀▀▀▀ 
+▄▀   █      ▀▀       ▄    ▀▄   ▄█▀ ▄▄ ▀  ▀                      
+
+
+
 This program should run a game of life simulation and display the
-"playground" in your terminal window every 100ms.
+"playground" in your terminal window every 100ms (see above)
 
 ## How to use
 

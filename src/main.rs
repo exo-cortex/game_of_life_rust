@@ -20,16 +20,16 @@ fn main() {
     }
 
     for _ in 0..steps {
-        for xi in 0..WIDTH {
-            for yi in 0..HEIGHT {
+        for yi in 0..HEIGHT {
+            for xi in 0..WIDTH {
                 // calculate total of a cell's 8 neighbors
                 let total = 0
-                    + playground[(yi - 1) % HEIGHT][(xi - 1) % WIDTH] as u8
-                    + playground[(yi - 1) % HEIGHT][xi] as u8
-                    + playground[(yi - 1) % HEIGHT][(xi + 1) % WIDTH] as u8
-                    + playground[yi][(xi - 1) % WIDTH] as u8
+                    + playground[(yi + HEIGHT - 1) % HEIGHT][(xi + WIDTH - 1) % WIDTH] as u8
+                    + playground[(yi + HEIGHT - 1) % HEIGHT][xi] as u8
+                    + playground[(yi + HEIGHT - 1) % HEIGHT][(xi + 1) % WIDTH] as u8
+                    + playground[yi][(xi + WIDTH - 1) % WIDTH] as u8
                     + playground[yi][(xi + 1) % WIDTH] as u8
-                    + playground[(yi + 1) % HEIGHT][(xi - 1) % WIDTH] as u8
+                    + playground[(yi + 1) % HEIGHT][(xi + WIDTH - 1) % WIDTH] as u8
                     + playground[(yi + 1) % HEIGHT][xi] as u8
                     + playground[(yi + 1) % HEIGHT][(xi + 1) % WIDTH] as u8;
                 // set the cell to it's new state depending on its own state and
